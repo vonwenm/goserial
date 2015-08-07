@@ -1,8 +1,9 @@
-package serial
+package main
 
 import (
 	"testing"
 	"time"
+        "github.com/vonwenm/goserial"
 )
 
 func TestConnection(t *testing.T) {
