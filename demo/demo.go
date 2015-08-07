@@ -10,7 +10,7 @@ func main() {
 
         log.Print("CONNECTING")
     
-        c := &serial.Config{Name: "COM4", Baud: 9600 }
+        c := &serial.Config{Name: "/dev/ttyUSB0", Baud: 9600 }
             s, err := serial.OpenPort(c)
             if err != nil {
                     log.Fatal(err)
